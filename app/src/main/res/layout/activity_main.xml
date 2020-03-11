@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.example.stark.cardiopredictor.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter all the below fields to predict"
+                android:id="@+id/textView"
+                android:textColor="@android:color/background_dark"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="numberDecimal"
+                android:text="Enter your Age:"
+                android:textColor="@android:color/background_dark" />
+
+            <EditText
+                android:id="@+id/agevalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="0-99"
+                android:inputType="numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:text="Enter your Gender (1-Male or 0-Female):"
+                android:textColor="@android:color/background_dark" />
+
+            <EditText
+                android:id="@+id/gendervalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="1 or 0"
+                android:inputType="numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter CP Value:"
+                android:id="@+id/value"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/cpvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Enter Value"
+                android:inputType="numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter trestbps Value in mmHg:"
+                android:id="@+id/bp"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/tresbpsvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter chol value in mg/dl: "
+                android:id="@+id/value2"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/cholvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter 'fbs'  (if >120mg/dl =1) else 0:"
+                android:id="@+id/cp"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/fbsvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="0 or 1"
+                android:inputType="number|numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter restecg"
+                android:id="@+id/rest"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/restecgvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number|numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter 'thalach' Value  :"
+                android:id="@+id/thalach"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/thalchvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number|numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter 'exang' value (1=yes or 0=no) :"
+                android:id="@+id/exang"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/exangvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number|numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter 'oldpeak' Value:"
+                android:id="@+id/old"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/oldpeakvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number|numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter 'slope' value: "
+                android:id="@+id/slope"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/slopevalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number|numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter 'ca' value (0-3) :"
+                android:id="@+id/ca"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/cavalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="0-3"
+                android:inputType="number|numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter thal value (3 = normal; 6 = fixed defect; 7 = reversable defect):"
+                android:id="@+id/thal"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/thalvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number|numberDecimal"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="?attr/actionMenuTextColor"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/result"
+                android:layout_margin="5dp"
+                android:text="Result Value"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
